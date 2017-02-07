@@ -1,0 +1,4 @@
+weight: 2
+name: "Mobile"
+icon: "fa fa-mobile"
+description: "Native mobile application testing using the best cross-platform frameworks available, testing across local or cloud based device farms."

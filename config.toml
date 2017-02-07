@@ -1,0 +1,67 @@
+baseurl = "https://testloop.co.uk/"
+title = "Testloop"
+disqusShortname = "testloop"
+googleAnalytics = "UA-90336614-1"
+paginate = 10
+disableHugoGeneratorInject = true
+
+[params]
+    viewMorePostLink = "/blog/"
+    author = "Danny Hall"
+
+    style = "testloop"
+    email = "hello@testloop.co.uk"
+
+    about_us = "Automation and Performance Test Development & Consulting."
+    copyright = "Testloop is a limited company registered in England and Wales. Registration #10058579. Copyright (c) 2017, Testloop Ltd. All rights reserved."
+    date_format = "2017-01-02"
+    logo = "img/logo.png"
+    latitude = "53.481849"
+    longitude = "-2.241222"
+
+[Permalinks]
+    blog = "/blog/:year/:month/:day/:filename/"
+
+[[params.menu]]
+    name = "Home"
+    url  = "/"
+    weight = 1
+
+[[params.menu]]
+    name = "Contact"
+    url  = "/contact/"
+    weight = 4
+
+[params.widgets]
+    categories = true
+    tags = true
+    search = true
+
+[params.carousel]
+    enable = true
+
+[params.features]
+    enable = true
+
+[params.testimonials]
+    enable = true
+    title = "Testimonials"
+    subtitle = "We have been fortunate enough to work with some incredible clients and we really appreciate their honest feedback of our service and hard work."
+
+[params.see_more]
+    enable = true
+    icon = "fa fa-heart"
+    title = "Can we help?"
+    subtitle = "We would love to hear from you to see if we can. Please get in touch using the contact form and see the other pages for more information. We will be updating our blog with case studies and articles in the coming weeks."
+    link_url = "/contact/"
+    link_text = "Contact"
+
+[params.clients]
+    enable = false
+    title = "Our Clients"
+    subtitle = ""
+
+[params.recent_posts]
+    enable = false
+    title = "From our blog"
+    subtitle = ""

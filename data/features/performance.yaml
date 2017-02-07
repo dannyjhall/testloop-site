@@ -1,0 +1,4 @@
+weight: 4
+name: "Performance"
+icon: "fa fa-bolt"
+description: "Gatling/JMeter experts. Understand your app's performance profile and be able to plan correctly to minimise performance issues."
