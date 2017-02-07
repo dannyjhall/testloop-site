@@ -1,0 +1,39 @@
+<footer id="footer">
+    <div class="container">
+
+        {{ if isset .Site.Params "about_us" }}
+        <div class="col-md-4 col-sm-6">
+            <h4>Testloop</h4>
+
+            {{ .Site.Params.about_us | safeHTML }}
+
+            <hr class="hidden-md hidden-lg hidden-sm">
+
+        </div>
+        {{ end }}
+
+        <div class="col-md-4 col-sm-6">
+
+            <h4>Location</h4>
+
+            <p>Manchester
+                <br>
+                <strong>United Kingdom</strong>
+            </p>
+
+            <hr class="hidden-md hidden-lg hidden-sm">
+
+        </div>
+
+    </div>
+</footer>
+
+<div id="copyright">
+    <div class="container">
+        <div class="col-md-12">
+            {{ if isset .Site.Params "copyright" }}
+            <p class="pull-left">{{ .Site.Params.copyright | safeHTML }}</p>
+            {{ end }}
+        </div>
+    </div>
+</div>
