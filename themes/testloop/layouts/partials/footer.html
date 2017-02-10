@@ -14,6 +14,33 @@
 
         <div class="col-md-4 col-sm-6">
 
+            <h4>Recent posts</h4>
+
+            <div class="blog-entries">
+                {{ range first 3 (where .Site.Pages "Type" "blog") }}
+                <div class="item same-height-row clearfix">
+                    <div class="image same-height-always">
+                        <a href="{{ .Permalink }}">
+                            {{ if isset .Params "banner" }}
+                            <img src="{{ .Site.BaseURL}}{{ .Params.banner }}" class="img-responsive" alt="">
+                            {{ else }}
+                            <img src="{{ .Site.BaseURL}}img/placeholder.png" class="img-responsive" alt="">
+                            {{ end }}
+                        </a>
+                    </div>
+                    <div class="name same-height-always">
+                        <h5><a href="{{ .Permalink }}">{{ .Title }}</a></h5>
+                    </div>
+                </div>
+                {{ end }}
+            </div>
+
+            <hr class="hidden-md hidden-lg">
+
+        </div>
+
+        <div class="col-md-4 col-sm-6">
+
             <h4>Location</h4>
 
             <p>Manchester
