@@ -4,6 +4,7 @@ disqusShortname = "testloop"
 googleAnalytics = "UA-90336614-1"
 paginate = 10
 disableHugoGeneratorInject = true
+pygmentscodefences = true
 
 [params]
     viewMorePostLink = "/blog/"
@@ -28,6 +29,11 @@ disableHugoGeneratorInject = true
     weight = 1
 
 [[params.menu]]
+    name = "Blog"
+    url  = "/blog/"
+    weight = 2
+
+[[params.menu]]
     name = "Contact"
     url  = "/contact/"
     weight = 4
@@ -46,7 +52,7 @@ disableHugoGeneratorInject = true
 [params.testimonials]
     enable = true
     title = "Testimonials"
-    subtitle = "We have been fortunate enough to work with some incredible clients and we really appreciate their honest feedback of our service and hard work."
+    subtitle = "We've been fortunate enough to work with some incredible clients and we really appreciate their honest feedback of our service and hard work."
 
 [params.see_more]
     enable = true
